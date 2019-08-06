@@ -1,6 +1,6 @@
 # unity-webgl-responsive
 
-Responsive layout for Unity WebGL applications. The application is resized when
+Responsive layout for Unity WebGL applications.
 
 ## How to use
 
