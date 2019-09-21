@@ -1,8 +1,10 @@
 # unity-webgl-responsive
 
-Responsive layout for Unity WebGL applications, intended for websites that have more going on than the application itself.
+Responsive layout template for Unity WebGL applications, intended for websites that have more going on than the application itself.
 
 <img src="assets/images/readme-demo.gif" alt="Demo GIF" width="640" height="480"/>
+
+[Demo](https://dom.ink/unity-webgl-responsive/)
 
 ## How to use
 
@@ -30,3 +32,5 @@ Change the max-width property of `.webgl-wrapper` in `style.css` to set the appl
 - The application canvas is dynamically resized based on the current width of the `.webgl-wrapper` div.
 - The canvas is expected to have a 16:9 aspect ratio. For other formats, change the aspect ratio in the `refreshCanvas` function of `app.js` in the template folder.
 - Press F to toggle fullscreen.
+
+Resulting HTML includes credits and a link back to this page but feel free to remove all of that and modify the template as needed. Disney head in the example project courtesy of [David OReilly](http://www.davidoreilly.com/).
