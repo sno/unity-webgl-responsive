@@ -1,3 +1,5 @@
+/* demo */
+
 * {
   font-family: monospace;
 }
@@ -8,14 +10,16 @@ body {
   font-size: 17px;
 }
 
-.info {
-  width:100%;
-  padding:20px;
-  box-sizing: border-box;
-  margin-bottom:40px;
+a {
+  color: #ccc;
+  text-decoration: underline;
 }
 
-
+.info {
+  width:100%;
+  padding:12px;
+  box-sizing: border-box;
+}
 
 /* webgl layout */
 
@@ -40,7 +44,7 @@ body {
 .webgl-content {
   position: relative;
   width: 100%;
-  background: yellow;
+  background: #ccc;
 }
 
 #unityContainer canvas{
