@@ -8,11 +8,11 @@ Create a folder called `WebGLTemplates` in the `Assets` folder of your Unity pro
 
 Copy the `responsive-template` folder and all of its contents into `WebGLTemplates`.
 
-![Folder location](assets/images/readme-folder.png)
+<img src="assets/images/readme-folder.png" alt="Folder location" width="217" height="87"/>
 
 Select the template in the Player settings (`Edit > Project Settings` then select the `Player` category) and set the default canvas resolution.
 
-![Template settings](assets/images/readme-template.png)
+<img src="assets/images/readme-template.png" alt="Template settings" width="408" height="316"/>
 
 Change the max-width property of `.webgl-wrapper` in `style.css` to set the application's maximum width:
 
@@ -26,4 +26,5 @@ Change the max-width property of `.webgl-wrapper` in `style.css` to set the appl
 ## Notes
 
 - The application canvas is dynamically resized based on the current width of the `.webgl-wrapper` div.
+- The canvas is expected to have a 16:9 aspect ratio. For other formats, change the aspect ratio in the `refreshCanvas` function of `app.js` in the template folder.
 - Press F to toggle fullscreen.
