@@ -2,6 +2,8 @@
 
 Responsive layout for Unity WebGL applications, intended for websites that have more going on than the application itself.
 
+<img src="assets/images/readme-demo.gif" alt="Demo GIF" width="640" height="480"/>
+
 ## How to use
 
 Create a folder called `WebGLTemplates` in the `Assets` folder of your Unity project.
