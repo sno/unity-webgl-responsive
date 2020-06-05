@@ -26,13 +26,7 @@ https://github.com/sno/unity-webgl-responsive
     <!-- unity resources -->
     <script src="Build/UnityLoader.js"></script>
     <script>
-      // instantiate webgl only if we're not on a touch device
-
-      var isTouch = ('ontouchstart' in document.documentElement);
-
-      if ( !isTouch ) {
-        var unityInstance = UnityLoader.instantiate("unityContainer", "Build/example.json");
-      }
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/example.json");
     </script>
   </head>
   <body>
