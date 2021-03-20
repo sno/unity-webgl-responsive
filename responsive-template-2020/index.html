@@ -1,0 +1,68 @@
+<!--
+unity webgl responsive
+
+template by dom
+dom@crowscrowscrows.com
+https://twitter.com/zerstoerer
+
+source code on github
+https://github.com/sno/unity-webgl-responsive
+-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+
+    <title>{{{ PRODUCT_NAME }}}</title>
+  </head>
+  <body>
+    <div class="webgl-wrapper">
+      <div class="webgl-content">
+        <div id="unityContainer">
+          <canvas id="unity-canvas" style="background: {{{ BACKGROUND_FILENAME ? 'url(\'Build/' + BACKGROUND_FILENAME.replace(/'/g, '%27') + '\') center / cover' : BACKGROUND_COLOR }}}"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="info">
+      <p>unity webgl responsive</p>
+      <p>press F or <a href="#" onclick="myGameInstance.SetFullscreen(1)">click here</a> to toggle fullscreen</p>
+    </div>
+
+    <!-- feel free to remove all credits! -->
+    <div class="info">
+      <p>source code on <a href="https://github.com/sno/unity-webgl-responsive">github</a></p>
+      <p>template by dom / <a href="https://twitter.com/zerstoerer">@zerstoerer</a></p>
+    </div>
+
+    <script src="MyLoader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/{{{ DATA_FILENAME }}}",
+        frameworkUrl: "Build/{{{ FRAMEWORK_FILENAME }}}",
+        codeUrl: "Build/{{{ CODE_FILENAME }}}",
+#if MEMORY_FILENAME
+        memoryUrl: "Build/{{{ MEMORY_FILENAME }}}",
+#endif
+#if SYMBOLS_FILENAME
+        symbolsUrl: "Build/{{{ SYMBOLS_FILENAME }}}",
+#endif
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "{{{ COMPANY_NAME }}}",
+        productName: "{{{ PRODUCT_NAME }}}",
+        productVersion: "{{{ PRODUCT_VERSION }}}",
+      }).then((unityInstance) => {
+        myGameInstance = unityInstance;
+      });
+    </script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

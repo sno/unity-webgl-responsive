@@ -10,7 +10,9 @@ Responsive layout template for Unity WebGL applications, intended for websites t
 
 Create a folder called `WebGLTemplates` in the `Assets` folder of your Unity project.
 
-Copy the `responsive-template` folder and all of its contents into `WebGLTemplates`.
+For Unity 2018 and 2019, copy the `responsive-template` folder and all of its contents into `WebGLTemplates`.
+
+For Unity 2020.1 and newer, copy the `responsive-template-2020` folder instead, as changes to the WebGL loader and templates were introduced with 2020.1.
 
 <img src="assets/images/readme-folder.png" alt="Folder location" width="217" height="87"/>
 
@@ -26,6 +28,8 @@ Optionally, change the max-width property of `.webgl-wrapper` in `style.css` to 
   max-width: 1280px;
 }
 ```
+
+For Gzip-compressed builds (see `Publishing Settings`), you should turn on `Decompression Fallback` or configure your web server to add `Content-Encoding: gzip` response header.
 
 ## Notes
 
