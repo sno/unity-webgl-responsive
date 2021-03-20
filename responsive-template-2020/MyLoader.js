@@ -1,3 +1,5 @@
+var myGameInstance = null;
+
 function createUnityInstance(canvas, config, onProgress) {
   onProgress = onProgress || function () {};
 

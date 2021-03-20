@@ -21,13 +21,13 @@ $( window ).resize(function() {
 // check for fullscreen toggle
 $(document).keydown(function(event) {
   var keycode = (event.keyCode ? event.keyCode : event.which);
-  if(keycode == '70'){
+  if(keycode == '70') {
     if (!isFullscreen) {
-      unityInstance.SetFullscreen(1);
+      myGameInstance.SetFullscreen(1);
       isFullscreen = true;
     }
     else {
-      unityInstance.SetFullscreen(0);
+      myGameInstance.SetFullscreen(0);
       isFullscreen = false;
     }
   }
