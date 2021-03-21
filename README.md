@@ -33,8 +33,7 @@ For Gzip-compressed builds (see `Publishing Settings`), you should turn on `Deco
 
 ## Notes
 
-- The application canvas is dynamically resized based on the current width of the `.webgl-wrapper` div.
-- The canvas is expected to have a 16:9 aspect ratio. For other formats, change the aspect ratio in the `refreshCanvas` function of `app.js` in the template folder.
-- Press F to toggle fullscreen.
+- Press F to toggle fullscreen. Customize this behavior in the script at the bottom of `index.html.`
+- The application canvas preserves the aspect ratio set in the `Player` settings in `Project Settings`.
 
-Resulting HTML includes credits and a link back to this page but feel free to remove all of that and modify the template as needed. Disney head in the example project courtesy of [David OReilly](http://www.davidoreilly.com/).
+Resulting HTML includes credits and a link back to this page, which is appreciated, but feel free to remove all of that and modify the template as needed. Disney head in the example project courtesy of [David OReilly](http://www.davidoreilly.com/).
