@@ -47,5 +47,21 @@ https://github.com/sno/unity-webgl-responsive
       <p>source code on <a href="https://github.com/sno/unity-webgl-responsive">github</a></p>
       <p>template by dom / <a href="https://twitter.com/zerstoerer">@zerstoerer</a></p>
     </div>
+
+    <!-- check for F key press to toggle full screen -->
+    <script>
+      var isFullscreen = false;
+
+      document.addEventListener('keydown', function(event) {
+          if (event.which === 70) {
+              if (!isFullscreen) {
+                unityInstance.SetFullscreen(1);
+              } else {
+                unityInstance.SetFullscreen(0);
+              }
+              isFullscreen = !isFullscreen;
+          }
+      });
+    </script>
   </body>
 </html>
