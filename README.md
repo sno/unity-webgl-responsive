@@ -20,12 +20,12 @@ Select the template in the Player settings (`Edit > Project Settings` then selec
 
 <img src="assets/images/readme-template.png" alt="Template settings" width="408" height="316"/>
 
-Optionally, change the max-width property of `.webgl-wrapper` in `style.css` to set the application's maximum width:
+Optionally, change the properties of `.webgl-wrapper` in `style.css` to set the application's maximum width:
 
 ```
 .webgl-wrapper {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1280px; /* remove this line for full width */
 }
 ```
 
