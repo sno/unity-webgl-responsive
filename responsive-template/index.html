@@ -22,8 +22,6 @@ https://github.com/sno/unity-webgl-responsive
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <script src="assets/js/jquery-3.4.1.min.js"></script>
-
     <!-- unity resources -->
     <script src="%UNITY_WEBGL_LOADER_URL%"></script>
 
@@ -39,11 +37,11 @@ https://github.com/sno/unity-webgl-responsive
   </head>
 
   <body>
-
     <div class="webgl-wrapper">
-        <div class="webgl-content">
-          <div id="unityContainer" style="width:%UNITY_WIDTH%px; height: %UNITY_HEIGHT%px;"></div>
-        </div>
+      <div class="aspect"></div>
+      <div class="webgl-content">
+        <div id="unityContainer"></div>
+      </div>
     </div>
 
     <div class="info">
@@ -56,8 +54,6 @@ https://github.com/sno/unity-webgl-responsive
       <p>source code on <a href="https://github.com/sno/unity-webgl-responsive">github</a></p>
       <p>template by dom / <a href="https://twitter.com/zerstoerer">@zerstoerer</a></p>
     </div>
-
-    <script src="assets/js/app.js"></script>
   </body>
 
 </html>
