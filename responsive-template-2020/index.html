@@ -19,12 +19,11 @@ https://github.com/sno/unity-webgl-responsive
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <script src="assets/js/jquery-3.4.1.min.js"></script>
-
     <title>{{{ PRODUCT_NAME }}}</title>
   </head>
   <body>
     <div class="webgl-wrapper">
+      <div class="aspect"></div>
       <div class="webgl-content">
         <div id="unityContainer">
           <canvas id="unity-canvas" style="background: {{{ BACKGROUND_FILENAME ? 'url(\'Build/' + BACKGROUND_FILENAME.replace(/'/g, '%27') + '\') center / cover' : BACKGROUND_COLOR }}}"></canvas>
@@ -63,6 +62,5 @@ https://github.com/sno/unity-webgl-responsive
         myGameInstance = unityInstance;
       });
     </script>
-    <script src="assets/js/app.js"></script>
   </body>
 </html>
