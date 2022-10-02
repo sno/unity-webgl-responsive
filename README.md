@@ -1,3 +1,7 @@
+# This repo is no longer maintained.
+
+Between the many different Unity versions and their varying template setups as well as my lack of resources, I haven't been able to maintain this repository. If you're interested it co-maintaining or taking over, please let me know.
+
 # unity-webgl-responsive
 
 Responsive layout template for Unity WebGL applications, intended for websites that have more going on than the application itself.
